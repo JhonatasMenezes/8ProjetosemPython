@@ -1,6 +1,8 @@
 # Projeto 1: Criar um programa que simule a ação de jogar um dado e obter
 # um número aleatório de 1 à 6.
 # Projeto 2: Criar uma tela pra ele.
+
+# vamos importar as libs necessárias
 import random as rd
 import PySimpleGUI as sg
 import time
@@ -13,6 +15,7 @@ class SimuladorDado():
         self.valor_maximo = 6
         self.mensagem = 'Quer jogar o dado?'
         sg.theme('DarkGrey12')
+        # layout da sua janela
         self.layout = [
             [sg.Text(self.mensagem,font='bold')],
             [sg.Output(size=(50,10), text_color='white')],
@@ -35,10 +38,13 @@ class SimuladorDado():
                 self.janela.close()
                 break
                 
+    # função para gerar um valor aleatório para o dado
     def GirarDado(self):
         valor = rd.randint(self.valor_minimo,self.valor_maximo)
         self.DadoImagem(valor)
-        
+    
+    # função que gera o dado com print
+    # (na minha máquina so estava ficando alinhado dessa forma)
     def DadoImagem(self, numero):
         if numero == 1:
             print(' _______')
@@ -77,7 +83,7 @@ class SimuladorDado():
             print('|O____O|')
             print('Uaaaau, uma sena completa!')
                
-        
+# e por fim, vamos instanciar nossa classe
 dado = SimuladorDado()
 dado.Iniciar()
         

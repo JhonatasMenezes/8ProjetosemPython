@@ -6,8 +6,6 @@ import random as rd
 import PySimpleGUI as sg
 import time
 
-from PySimpleGUI.PySimpleGUI import main
-
 # Criar a classe do game
 class EscolhaUmNumero:
     # Definições iniciais
@@ -56,7 +54,10 @@ class EscolhaUmNumero:
                             print('Aí sim 😎')
                             time.sleep(2)
                             # finalizar caso acerte
-                            break   
+                            break
+                elif self.evento == sg.WIN_CLOSED:
+                    self.janela.close()
+                    break
         except:
             print('FAVOR DIGITAR UM VALOR VÁLIDO')
             self.Iniciar()

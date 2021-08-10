@@ -36,5 +36,6 @@ class DecidaPorMim:
             else:
                 break
         
+# instanciar a classe
 decida = DecidaPorMim()
 decida.Iniciar()
