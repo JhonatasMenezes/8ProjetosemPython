@@ -1,6 +1,5 @@
 import random as rd
 import PySimpleGUI as sg
-import sys
 import time
 
 class EscolhaUmNumero:
