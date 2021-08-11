@@ -45,7 +45,7 @@ class SpaceAdventure:
         )
         sg.theme('DarkBlue8')
         self.layout = [
-            [sg.Output(size=(60,15))],
+            [sg.Output(size=(60,15),background_color='gray',font='bold')],
             [sg.Button('Iniciar',key=5,size=(11,2),button_color=('white','green'),font='bold'),
             sg.Button('1',key=1,size=(11,2),button_color=('white','black'),font='bold'),
             sg.Button('2',key=2,size=(11,2),button_color=('white','black'),font='bold'),
