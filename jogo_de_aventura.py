@@ -89,14 +89,14 @@ class SpaceAdventure:
                             time.sleep(5)
                             self.eventos = 0
                             break
-                    elif self.eventos == 2:
+                    elif self.eventos == 2:                     
                         print('O sistema está sendo desligado...')
                         time.sleep(1)
                         print('Não vamos conseguir...')
-                        print('É o fim.')
+                        print('É o fim.') 
                         time.sleep(5)
                         self.janela.close()
-                        break
+                        break               # no caso de dar errado 'a missão', o jogo quita
                 elif self.eventos == 1:
                     time.sleep(1)
                     print('Não vamos conseguir...')
@@ -104,7 +104,7 @@ class SpaceAdventure:
                     time.sleep(5)
                     self.janela.close()
                     break
-    
+                
     #função pra simular digitação        
     def DigitarMensagem(self,mensagem):
         for letter in mensagem:
@@ -114,6 +114,6 @@ class SpaceAdventure:
                 time.sleep(0.7)
              
             
-
+# por último vamos instanciar nossa classe
 game = SpaceAdventure()
 game.Iniciar()
