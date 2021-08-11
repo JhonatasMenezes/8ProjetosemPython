@@ -39,9 +39,9 @@ class SpaceAdventure:
         self.historia = 'ATENÇÃO!!!\nVocê estava em uma missão dupla até Saturno...\nSua nave bateu em um asteróide está perdendo pressão aos poucos...\nVocê não tem muito tempo e...\nAs chances de sobrevivência são quase nulas...\nSe tiver sorte a outra nave da missão poderá receber seu sinal...\nTome as melhores decisões ou JÁ ERA!!! Irá acontecer o pior!!!'
         # aqui vamos fazer uma tupla para usar o mínimo de variáveis possível
         self.opcoesPossiveis = (
-            'Para destravar a porta, escolha a senha CERTA:\nrES703r4d4 [1]     teRr2sATurn [2]',
-            'Aperte o botão CORRETO para usar o rádio:\nMHZ(GMArconi) [1]     StrongBye[2]', 
-            'Redirecione a nave para enviar o sinal para a outra missão:\n194°FahrRadians [1]     100N°toStone [2]',  
+            'Para destravar a porta, escolha a senha CERTA:\n rES703r4d4 [1]     teRr2sATurn [2]',
+            'Aperte o botão CORRETO para usar o rádio:\n MHZ(GMArconi) [1]     StrongBye [2]', 
+            'Redirecione a nave para enviar o sinal para a outra missão:\n 194°FahrRadians [1]     100N°toStone [2]',  
         )
         sg.theme('DarkBlue8')
         self.layout = [
@@ -109,7 +109,7 @@ class SpaceAdventure:
     def DigitarMensagem(self,mensagem):
         for letter in mensagem:
             sys.stdout.write(letter)
-            #time.sleep(0.05)
+            time.sleep(0.05)
             if letter == "\n":
                 time.sleep(0.7)
              
