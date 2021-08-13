@@ -18,5 +18,5 @@ caminho em direção a excelência que eu tanto busco.
 ---
 ⚠️⚠️⚠️ Reforçando pra quem não ler os insights⚠️⚠️⚠️
 
-Cada arquivo contém 2 projetos no total. O 1° para o backend e o 2°para a GUI do sistema.
+Cada arquivo contém 2 projetos no total. O backend e a GUI do programa.
 Aproveite o repositório!
