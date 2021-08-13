@@ -1,5 +1,5 @@
 # 8ProjetosemPython 🐍
-## O nome é autoexplicativo, são 8 projetos feitos na linguagem Python, seguindo o tutorial do canal [DevAprender (Youtube)](https://www.youtube.com/watch?v=7U3-pJZkN-o).
+## O nome é bem autoexplicativo, são 8 projetos feitos na linguagem Python, seguindo o tutorial do canal [DevAprender (Youtube)](https://www.youtube.com/watch?v=7U3-pJZkN-o).
 ---
 ### Insights sobre o projeto 💻
 Vou contar um pouco sobre eles e como foi desenvolvê-los.
